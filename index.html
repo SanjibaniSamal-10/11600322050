@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>URL SHORTENER STATISTICS PAGE </h1>
+    <form id="shorten-form">
+      <div>
+        <label for="url">Enter URL : </label>
+        <input type="url" name="url" id="url" placeholder="https://www.example.com/long-url" required>
+      </div>
+      <button type="submit">Shorten It</button>
+      <div class="result"></div>
+    </form>
+    <h2>Saved Short Links</h2>
+    <table border="1" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Shortcode</th>
+          <th>Original URL</th>
+          <th>Shortened URL</th>
+        </tr>
+      </thead>
+      <tbody id="url-table-body"></tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
